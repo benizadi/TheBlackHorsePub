@@ -1,15 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Microsoft.Extensions.Logging.Abstractions;
 
 namespace DataAccess
 {
     public class BlackHorsePubDbContext: DbContext
     {
-        public BlackHorsePubDbContext() : base("DbConnection")
+        public BlackHorsePubDbContext(DbContextOptions<BlackHorsePubDbContext> optionBuilder) : base(optionBuilder)
         {
             
         }
