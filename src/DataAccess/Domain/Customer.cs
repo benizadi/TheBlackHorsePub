@@ -8,12 +8,12 @@ public class Customer : Entity
     public string CompanyName { get; set; }
     public string ContactName { get; set; }
     public string ContactTitle { get; set; }
-
     public Address Address { get; set; }
+    public ICollection<Order> Orders { get; set; }
 }
 
 
-public class Address
+public class Address : Entity
 {
     public Guid AddressId { get; set; }
     public string FirstLineOfAddress { get; set; }
@@ -28,6 +28,17 @@ public class Address
     public Customer Customer { get; set; }
 }
  
+public class Order : Entity
+{
+    public Guid OrderId { get; set; }
+    public DateTime OrderDate { get; set; }
+    public DateTime RequiredDate { get; set; }
+    public DateTime ShipDate { get; set; }
+    
+    public Guid CustomerId { get; set; }
+    public Customer Customer { get; set; }
+}
+
 public abstract class Entity
 {
     public Guid Id { get; }
@@ -51,16 +62,7 @@ public abstract class Entity
 //     public string LastName { get; set; }
 // }
 
-// public class Order : Entity
-// {
-//     public Guid GuidId { get; set; }
-//     public DateTime OrderDate { get; set; }
-//     public DateTime RequiredDate { get; set; }
-//     public DateTime ShipDate { get; set; }
-//     
-//     //has employees
-//     //has Customers
-// }
+
 //
 // public class OrderDetail : Entity
 // {
