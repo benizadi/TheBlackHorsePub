@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "src\DataAccess\DataAccess.csproj", "{BD992A6C-6865-488B-9499-2C4E161FDAFC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "src\Application\Application.csproj", "{4BA341B3-59FB-4EAC-91ED-87B072FCE66A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{BD992A6C-6865-488B-9499-2C4E161FDAFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD992A6C-6865-488B-9499-2C4E161FDAFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD992A6C-6865-488B-9499-2C4E161FDAFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BA341B3-59FB-4EAC-91ED-87B072FCE66A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BA341B3-59FB-4EAC-91ED-87B072FCE66A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BA341B3-59FB-4EAC-91ED-87B072FCE66A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BA341B3-59FB-4EAC-91ED-87B072FCE66A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

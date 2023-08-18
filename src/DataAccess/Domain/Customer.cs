@@ -39,6 +39,32 @@ public class Order : Entity
     public Customer Customer { get; set; }
 }
 
+public class Product : Entity
+{
+    public Guid ProductId { get; set; }
+    public string ProductName { get; set; }
+    public decimal UnitPrice { get; set; }
+
+    public ICollection<ProducerProduct> ProducerProducts { get; set; }
+}
+
+public class Producer : Entity
+{
+    public Guid ProducerId { get; set; }
+    public string BrandName { get; set; }
+
+    public ICollection<ProducerProduct> ProducerProducts { get; set; }
+}
+
+public class ProducerProduct : Entity
+{
+    public Guid ProducerId { get; set; }
+    public Producer Producer { get; set; }
+    
+    public Guid ProductId { get; set; }
+    public Product Product { get; set; }
+}
+
 public abstract class Entity
 {
     public Guid Id { get; }
@@ -61,8 +87,8 @@ public abstract class Entity
 //     public string FirstName { get; set; }
 //     public string LastName { get; set; }
 // }
-
-
+//
+//
 //
 // public class OrderDetail : Entity
 // {
@@ -72,11 +98,6 @@ public abstract class Entity
 //     //has orders
 //     //has products
 // }
-//
-// public class Product
-// {
-//     public Guid ProductId { get; set; }
-//     public string ProductName { get; set; }
-//     public decimal UnitPrice { get; set; }
-// }
+
+
 
