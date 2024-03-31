@@ -1,0 +1,6 @@
+﻿services:
+  webclient:
+    image: webclient
+    build:
+      context: .
+      dockerfile: src/WebClient/Dockerfile

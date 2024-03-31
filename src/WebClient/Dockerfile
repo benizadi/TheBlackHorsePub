@@ -7,10 +7,10 @@ EXPOSE 8081
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["WebClient/WebClient.csproj", "WebClient/"]
-RUN dotnet restore "WebClient/WebClient.csproj"
+COPY ["src/WebClient/WebClient.csproj", "src/WebClient/"]
+RUN dotnet restore "src/WebClient/WebClient.csproj"
 COPY . .
-WORKDIR "/src/WebClient"
+WORKDIR "/src/src/WebClient"
 RUN dotnet build "WebClient.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish

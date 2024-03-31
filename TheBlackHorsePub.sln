@@ -4,7 +4,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "src\DataAcces
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "src\Application\Application.csproj", "{4BA341B3-59FB-4EAC-91ED-87B072FCE66A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebClient", "src\WebClient\WebClient.csproj", "{2A9B20B6-EE93-47E3-9F4D-A6FDE8A5347E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebClient", "src\WebClient\WebClient.csproj", "{F4B7588B-EC76-43AA-B096-3232E179609F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C00A2617-7FED-4E16-BECD-521C03D00046}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,9 +25,9 @@ Global
 		{4BA341B3-59FB-4EAC-91ED-87B072FCE66A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4BA341B3-59FB-4EAC-91ED-87B072FCE66A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4BA341B3-59FB-4EAC-91ED-87B072FCE66A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2A9B20B6-EE93-47E3-9F4D-A6FDE8A5347E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2A9B20B6-EE93-47E3-9F4D-A6FDE8A5347E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2A9B20B6-EE93-47E3-9F4D-A6FDE8A5347E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2A9B20B6-EE93-47E3-9F4D-A6FDE8A5347E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4B7588B-EC76-43AA-B096-3232E179609F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4B7588B-EC76-43AA-B096-3232E179609F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4B7588B-EC76-43AA-B096-3232E179609F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4B7588B-EC76-43AA-B096-3232E179609F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
