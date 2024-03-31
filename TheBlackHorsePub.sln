@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		docker-compose.yml = docker-compose.yml
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctions", "src\AzureFunctions\AzureFunctions.csproj", "{7438FDE7-B165-4DF8-93BB-B43E1FCABBDC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,5 +31,9 @@ Global
 		{F4B7588B-EC76-43AA-B096-3232E179609F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4B7588B-EC76-43AA-B096-3232E179609F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4B7588B-EC76-43AA-B096-3232E179609F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7438FDE7-B165-4DF8-93BB-B43E1FCABBDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7438FDE7-B165-4DF8-93BB-B43E1FCABBDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7438FDE7-B165-4DF8-93BB-B43E1FCABBDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7438FDE7-B165-4DF8-93BB-B43E1FCABBDC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
