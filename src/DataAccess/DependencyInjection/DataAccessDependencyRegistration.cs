@@ -3,9 +3,9 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace DataAccess.DependencyInjection;
 
-public class DataAccessDependencyInjection
+public static class DataAccessDependencyRegistration
 {
-    public void AddService(IServiceCollection serviceCollection)
+    public static void AddDataAccess(this IServiceCollection serviceCollection)
     {
         serviceCollection.AddTransient<IProductRepository, ProductRepository>();
     }
