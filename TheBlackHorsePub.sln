@@ -1,17 +1,20 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "src\DataAccess\DataAccess.csproj", "{BD992A6C-6865-488B-9499-2C4E161FDAFC}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "src\DataAccess\DataAccess.csproj", "{BD992A6C-6865-488B-9499-2C4E161FDAFC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "src\Application\Application.csproj", "{4BA341B3-59FB-4EAC-91ED-87B072FCE66A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebClient", "src\WebClient\WebClient.csproj", "{F4B7588B-EC76-43AA-B096-3232E179609F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "src\Application\Application.csproj", "{4BA341B3-59FB-4EAC-91ED-87B072FCE66A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C00A2617-7FED-4E16-BECD-521C03D00046}"
 	ProjectSection(SolutionItems) = preProject
 		docker-compose.yml = docker-compose.yml
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctions", "src\AzureFunctions\AzureFunctions.csproj", "{7438FDE7-B165-4DF8-93BB-B43E1FCABBDC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureFunctions", "src\AzureFunctions\AzureFunctions.csproj", "{7438FDE7-B165-4DF8-93BB-B43E1FCABBDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebClient", "src\WebClient\WebClient.csproj", "{0E7FF6FD-1FE6-4318-A6CD-F2C70CF02F1B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,13 +30,19 @@ Global
 		{4BA341B3-59FB-4EAC-91ED-87B072FCE66A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4BA341B3-59FB-4EAC-91ED-87B072FCE66A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4BA341B3-59FB-4EAC-91ED-87B072FCE66A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F4B7588B-EC76-43AA-B096-3232E179609F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F4B7588B-EC76-43AA-B096-3232E179609F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F4B7588B-EC76-43AA-B096-3232E179609F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F4B7588B-EC76-43AA-B096-3232E179609F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7438FDE7-B165-4DF8-93BB-B43E1FCABBDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7438FDE7-B165-4DF8-93BB-B43E1FCABBDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7438FDE7-B165-4DF8-93BB-B43E1FCABBDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7438FDE7-B165-4DF8-93BB-B43E1FCABBDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E7FF6FD-1FE6-4318-A6CD-F2C70CF02F1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E7FF6FD-1FE6-4318-A6CD-F2C70CF02F1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E7FF6FD-1FE6-4318-A6CD-F2C70CF02F1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E7FF6FD-1FE6-4318-A6CD-F2C70CF02F1B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {56CAA879-D862-4D2E-8C19-6A1D88DFF470}
 	EndGlobalSection
 EndGlobal
