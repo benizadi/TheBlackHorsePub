@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Net;
+﻿using System.Net;
 using Microsoft.Azure.Functions.Worker;
 using Microsoft.Azure.Functions.Worker.Http;
 using Microsoft.Extensions.Logging;
@@ -19,7 +18,7 @@ public class Status
     public HttpResponseData Run([HttpTrigger(AuthorizationLevel.Function, "get", "post")] HttpRequestData req,
         FunctionContext executionContext)
     {
-        var I = new HttpResponseData().StatusCode = ;
-        return HttpResponseData.CreateResponse() ;
+        var response = req.CreateResponse(HttpStatusCode.OK);
+        return response;
     }
 }
